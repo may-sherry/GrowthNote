@@ -11,20 +11,13 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '更新日志', link: '/changelog' },
-      { text: '隐私政策', link: '/privacy' },
-      { text: '关于作者', link: 'https://may-sherry.github.io' } // 跳转个人主站点
+      { text: '投喂支持', link: '/sponsor' },
+      { text: '互动留言', link: '/comments' },
+      { text: '隐私政策', link: '/privacy' }
     ],
 
-    sidebar: [
-      {
-        text: '使用指引',
-        items: [
-          { text: '产品介绍', link: '/' },
-          { text: '版本历程 (Changelog)', link: '/changelog' },
-          { text: '隐私政策与协议', link: '/privacy' }
-        ]
-      }
-    ],
+    // 禁用左侧冗余侧边栏，让正文全屏居中展示，干净纯粹
+    sidebar: false,
 
     socialLinks: [
       // 右上角 GitHub 图标：点击直接跳到你的 GitHub 项目仓库

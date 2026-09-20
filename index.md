@@ -1,46 +1,34 @@
 ---
 # ==============================================================================
 # 第一部分：YAML 配置区 (Frontmatter)
-# 作用：定义首页大屏 (Hero) 与核心特性 (Features)
+# 作用：定义首页大屏 (Hero)
 # ==============================================================================
 layout: home
 
 hero:
   name: "成长小记"
   text: "GrowthNote"
-  tagline: 搭建成长体系，见证你每一次微小的进步
+  tagline: 搭建多维成长体系，见证你每一次微小的进步 · 纯净免费无广告
   image:
     src: /logo.png
     alt: GrowthNote Logo
   actions:
-    # 1. 立即下载 APK（品牌主按钮）
     - theme: brand
       text: 立即下载 APK
       link: /download
-    # 2. 查看更新日志
     - theme: alt
       text: 查看更新日志
       link: /changelog
-    # 3. 投喂开发者
     - theme: alt
       text: 投喂开发者 🧋
       link: /sponsor
-    # 4. 互动留言板
     - theme: alt
-      text: 互动留言板 💬
-      link: /comments
-
-features:
-  - title: 体系化成长看板
-    details: 像管理文件一样管理多维度的成长事项，树状层级清晰呈现多维成长脉络。
-  - title: 灵活计时与快速记录
-    details: 支持专注计时与碎片化补录，随时打卡三餐、体重与各类灵感日常。
-  - title: 本地优先与隐私安全
-    details: 数据完全归属于你的本地设备，无网络依赖，远离数据泄露风险。
+      text: 去 QQ 频道打个卡 💬
+      link: https://pd.qq.com/s/g6yra9f2t?b=9
 ---
 
 <style>
-/* 强制缩小首页 Hero 图片尺寸 */
+/* 调小首页 Hero 图片尺寸，更加精致 */
 .VPHomeHero .image-src {
   max-width: 200px !important;
   max-height: 200px !important;
@@ -63,4 +51,248 @@ features:
     height: 160px !important;
   }
 }
+
+/* 核心功能亮点深度展示区 */
+.showcase-wrapper {
+  max-width: 1152px;
+  margin: 48px auto 60px;
+  padding: 0 24px;
+}
+.showcase-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.showcase-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--vp-c-text-1);
+}
+.showcase-subtitle {
+  font-size: 1.05rem;
+  color: var(--vp-c-text-2);
+  margin-top: 8px;
+}
+
+/* 两列大功能卡片网格 */
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+@media (max-width: 768px) {
+  .showcase-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.feature-deep-card {
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 16px;
+  padding: 28px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+.feature-deep-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.05);
+}
+
+.card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  width: fit-content;
+  margin-bottom: 14px;
+}
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--vp-c-text-1);
+  margin-bottom: 10px;
+}
+.card-desc {
+  font-size: 0.95rem;
+  color: var(--vp-c-text-2);
+  line-height: 1.65;
+  margin-bottom: 16px;
+}
+.card-points {
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px dashed var(--vp-c-divider);
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.card-points li {
+  font-size: 0.88rem;
+  color: var(--vp-c-text-2);
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.card-points li::before {
+  content: "✓";
+  color: var(--vp-c-brand-1);
+  font-weight: bold;
+}
+
+/* 底部行动召唤 Banner (CTA) */
+.cta-banner {
+  margin-top: 48px;
+  padding: 36px 32px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, var(--vp-c-brand-soft) 0%, var(--vp-c-bg-soft) 100%);
+  border: 1px solid var(--vp-c-brand-soft);
+  text-align: center;
+}
+.cta-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--vp-c-text-1);
+  margin-bottom: 8px;
+}
+.cta-desc {
+  font-size: 0.95rem;
+  color: var(--vp-c-text-2);
+  max-width: 580px;
+  margin: 0 auto 20px;
+}
+.cta-btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.cta-btn-primary {
+  background: var(--vp-c-brand-1);
+  color: white !important;
+  padding: 10px 24px;
+  border-radius: 24px;
+  font-weight: 700;
+  text-decoration: none !important;
+  transition: opacity 0.2s;
+}
+.cta-btn-primary:hover {
+  opacity: 0.9;
+}
+.cta-btn-secondary {
+  background: var(--vp-c-bg);
+  border: 1px solid var(--vp-c-divider);
+  color: var(--vp-c-text-1) !important;
+  padding: 10px 22px;
+  border-radius: 24px;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: border-color 0.2s;
+}
+.cta-btn-secondary:hover {
+  border-color: var(--vp-c-brand-1);
+}
+
+/* 强制 Hero 按钮在桌面端排成一行 */
+.VPHomeHero .actions {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  gap: 12px !important;
+  justify-content: center;
+}
+.VPHomeHero .action .VPButton {
+  padding: 0 18px !important; /* 缩小左右内边距让按钮更紧凑 */
+  white-space: nowrap !important; /* 防止文字换行 */
+}
+@media (max-width: 768px) {
+  .VPHomeHero .actions {
+    flex-wrap: wrap !important; /* 移动端屏幕太小，允许换行 */
+  }
+}
+
 </style>
+
+<div class="showcase-wrapper">
+<div class="showcase-header">
+<div class="showcase-title">✨ 为专注与长久坚持而生</div>
+<div class="showcase-subtitle">全功能永久免费、无广告干扰 · 摒弃沉重复杂的传统商业软件，用极简纯粹找回生活的掌控感</div>
+</div>
+<div class="showcase-grid">
+<div class="feature-deep-card">
+<span class="card-badge">体系化分类</span>
+<div class="card-title">📁 像管理文件夹一样管理成长</div>
+<div class="card-desc">拒绝扁平散乱的记事清单。独创文件夹树状结构，自由创建“考研”、“编程”、“健身”等生活维度，层级分明，条理清晰。</div>
+<ul class="card-points">
+<li>支持跨层级灵活拖拽移动</li>
+<li>常用事项一键长按加入 ❤️ 快捷收藏</li>
+<li>支持自定义拖拽排序与首字母智能排版</li>
+</ul>
+</div>
+<div class="feature-deep-card">
+<span class="card-badge">情境感记录</span>
+<div class="card-title">⏱️ 300字微复盘，告别小作文焦虑</div>
+<div class="card-desc">专注正计时与番茄倒计时结束时，趁热打铁拍一张桌面照片，配上一两句瞬间感悟。不用长篇大论，毫无负担记录真实温度。</div>
+<ul class="card-points">
+<li>单图记录与 300 字精炼文字上限</li>
+<li>支持随手补录与生活灵感快记</li>
+<li>打造只属于自己的高质量“私密朋友圈”</li>
+</ul>
+</div>
+<div class="feature-deep-card">
+<span class="card-badge">极客隐私创新</span>
+<div class="card-title">🤖 自带密钥 (BYOK) 的 AI 报告</div>
+<div class="card-desc">拒绝贩卖用户隐私。创新采用 Bring Your Own Key 模式，用户自由配置 DeepSeek / Kimi / GPT 等大模型凭证，一键提炼你的成长轨迹。</div>
+<ul class="card-points">
+<li>一键生成智能日报、周报、月报与年报</li>
+<li>敏感图片绝对脱敏，仅纯文本加密直连</li>
+<li>生成的报告永久本地留存，随时回顾复盘</li>
+</ul>
+</div>
+<div class="feature-deep-card">
+<span class="card-badge">反内耗哲学</span>
+<div class="card-title">🌱 允许请假，给习惯一份宽容</div>
+<div class="card-desc">市面上的习惯打卡断签一天就令人崩溃自责。我们创新性地引入“请假条”机制，疲惫时勇敢原谅自己，让坚持真正可持续。</div>
+<ul class="card-points">
+<li>直观的二元勾叉状态与打卡热力图</li>
+<li>真诚的请假条碎碎念，诚实面对真实当下</li>
+<li>以月为单位，回顾每月习惯养成与请假轨迹</li>
+</ul>
+</div>
+<div class="feature-deep-card">
+<span class="card-badge">数据洞察与回望</span>
+<div class="card-title">📊 每日时间轴、饼图与热力图</div>
+<div class="card-desc">自动串联你的每日专注轨迹，时间流向清晰可视化。一眼看清精力在学习、工作与运动中的真实投入占比，科学复盘每一天。</div>
+<ul class="card-points">
+<li>每日时间轴串联图文，记录真实生活轨迹</li>
+<li>时间分配占比饼图，多维度自由筛选透视</li>
+<li>支持多维度热力图分布，直观展现专注密度</li>
+</ul>
+</div>
+<div class="feature-deep-card">
+<span class="card-badge">私有云与零成本</span>
+<div class="card-title">☁️ 坚果云 WebDAV 云同步</div>
+<div class="card-desc">纯本地优先架构，数据 100% 掌握在自己手中。无需依赖中心化商业服务器，轻巧全量同步核心数据，差异增量上传新增照片。</div>
+<ul class="card-points">
+<li>SQLite 纯本地沙盒存储，换机无损迁移</li>
+<li>轻量级数据快速同步，照片仅增量上传</li>
+<li>全流程相对路径架构，彻底告别死链风险</li>
+</ul>
+</div>
+</div>
+<div class="cta-banner">
+<div class="cta-title">准备好开启你的成长小记了吗？</div>
+<div class="cta-desc">纯净本地、完全免费、没有任何烦人开屏广告。从今天的一刻专注开始，见证你每一次微小的进步。</div>
+<div class="cta-btn-group">
+<a href="/GrowthNote/download" class="cta-btn-primary">立即下载体验 Android 版</a>
+<a href="https://pd.qq.com/s/g6yra9f2t?b=9" target="_blank" class="cta-btn-secondary">去 QQ 频道打个卡 💬</a>
+</div>
+</div>
+</div>

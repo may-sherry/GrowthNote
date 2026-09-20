@@ -12,7 +12,7 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '更新日志', link: '/changelog' },
       { text: '投喂支持', link: '/sponsor' },
-      { text: '互动留言', link: '/comments' },
+      { text: '交流与反馈', link: 'https://pd.qq.com/s/g6yra9f2t?b=9' },
       { text: '隐私政策', link: '/privacy' }
     ],
 

@@ -29,34 +29,21 @@ hero:
 
 <style>
 /* 调小首页 Hero 图片尺寸，更加精致 */
-.VPHomeHero .image-src {
-  max-width: 200px !important;
-  max-height: 200px !important;
-}
-.VPHomeHero .image-container {
-  width: 220px !important;
-  height: 220px !important;
-}
-.VPHomeHero .image-bg {
-  width: 200px !important;
-  height: 200px !important;
-}
-@media (max-width: 640px) {
-  .VPHomeHero .image-src {
-    max-width: 150px !important;
-    max-height: 150px !important;
-  }
-  .VPHomeHero .image-container {
-    width: 160px !important;
-    height: 160px !important;
-  }
-}
+
+
+
+
 
 /* 核心功能亮点深度展示区 */
 .showcase-wrapper {
   max-width: 1152px;
   margin: 48px auto 60px;
-  padding: 0 24px;
+  padding: 0; /* 桌面端去掉内边距，让卡片向外扩展对齐 Hero */
+}
+@media (max-width: 960px) {
+  .showcase-wrapper {
+    padding: 0 24px; /* 移动端保留内边距防贴边 */
+  }
 }
 .showcase-header {
   text-align: center;
@@ -171,7 +158,7 @@ hero:
 }
 .cta-btn-group {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 16px;
   flex-wrap: wrap;
 }
@@ -206,7 +193,7 @@ hero:
   display: flex !important;
   flex-wrap: nowrap !important;
   gap: 12px !important;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .VPHomeHero .action .VPButton {
   padding: 0 18px !important; /* 缩小左右内边距让按钮更紧凑 */

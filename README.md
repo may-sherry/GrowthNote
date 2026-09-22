@@ -29,7 +29,7 @@
 
 * 🏠 **[产品首页](https://may-sherry.github.io/GrowthNote/)**：
   - 下载最新的 APK 安装包。
-  - 了解软件的六大核心特性（树状看板、300字微复盘、自带密钥 BYOK 的 AI 报告、反内耗请假条打卡、多维时间轴、坚果云 WebDAV 同步）。
+  - 了解软件的六大核心特性（树状文件夹分类、理智与感性双轨记录(各800字+9图)、反内耗请假条打卡、多维时间轴与统计、自带密钥 BYOK 的 AI 报告、坚果云 WebDAV 同步）。
 * ⏱️ **[更新日志 (Changelog)](https://may-sherry.github.io/GrowthNote/changelog)**：详细记录每次版本迭代的功能与修复。
 * 🧋 **[投喂支持](https://may-sherry.github.io/GrowthNote/sponsor)**：一封写给用户的信，如果软件对你有切实帮助，欢迎请我喝杯奶茶支持我持续迭代。
 * 💬 **[玩家交流群 (QQ频道)](https://pd.qq.com/s/g6yra9f2t?b=9)**：加入我们的 QQ 交流频道，随时写下你的想法、打卡、催更或吐槽。
@@ -39,7 +39,7 @@
 
 ## 👩‍💻 关于我与联系方式
 
-我是这名工科女大学生，也是《成长小记》的独立创作者。
+我是一名工科女大学生，也是《成长小记》的独立创作者。
 如果你在使用软件时发现了奇怪的 Bug，或者有什么奇思妙想的建议，欢迎随时找我交流：
 
 * 🌐 **个人博客主站**：[https://may-sherry.github.io](https://may-sherry.github.io)

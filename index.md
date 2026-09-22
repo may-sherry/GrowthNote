@@ -8,7 +8,7 @@ layout: home
 hero:
   name: "成长小记"
   text: "GrowthNote"
-  tagline: 搭建多维成长体系，见证你每一次微小的进步 · 纯净免费无广告
+  tagline: 搭建多维成长体系，见证你每一次微小的进步
   image:
     src: /logo.png
     alt: GrowthNote Logo
@@ -17,17 +17,51 @@ hero:
       text: 立即下载 APK
       link: /download
     - theme: alt
-      text: 查看更新日志
-      link: /changelog
+      text: AI 配置教程 📖
+      link: /tutorial/
     - theme: alt
-      text: 投喂开发者 🧋
-      link: /sponsor
-    - theme: alt
-      text: 去 QQ 频道打个卡 💬
-      link: https://pd.qq.com/s/g6yra9f2t?b=9
+      text: 实战使用示例 ✨
+      link: /examples
 ---
 
 <style>
+/* 精准对齐：Hero 图片与下方卡片右边缘对齐 */
+@media (min-width: 960px) {
+  .VPHomeHero .container {
+    max-width: 1152px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .VPHomeHero .image {
+    display: flex !important;
+    justify-content: flex-end !important;
+  }
+  .VPHomeHero .image-container {
+    width: 240px !important;
+    height: 240px !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+  }
+  .VPHomeHero .image-src {
+    max-width: 240px !important;
+    max-height: 240px !important;
+    border-radius: 20px; /* 圆角契合下方卡片风格 */
+  }
+  .VPHomeHero .image-bg {
+    width: 240px !important;
+    height: 240px !important;
+    left: auto !important;
+    right: 0 !important;
+  }
+}
+@media (max-width: 960px) {
+  .VPHomeHero .image {
+    justify-content: center !important;
+  }
+  .VPHomeHero .image-container {
+    margin: 0 auto !important;
+  }
+}
 /* 调小首页 Hero 图片尺寸，更加精致 */
 
 
@@ -215,8 +249,8 @@ hero:
 <div class="showcase-grid">
 <div class="feature-deep-card">
 <span class="card-badge">体系化分类</span>
-<div class="card-title">📁 像管理文件夹一样管理成长</div>
-<div class="card-desc">拒绝扁平散乱的记事清单。独创文件夹树状结构，自由创建“考研”、“编程”、“健身”等生活维度，层级分明，条理清晰。</div>
+<div class="card-title">📁 像整理文件夹一样规划成长</div>
+<div class="card-desc">告别扁平堆积的待办清单。独创树状文件夹架构，为你真正值得长期投入的学习、技能与生活目标分门别类，层级分明，条理清晰。</div>
 <ul class="card-points">
 <li>支持跨层级灵活拖拽移动</li>
 <li>常用事项一键长按加入 ❤️ 快捷收藏</li>
@@ -224,29 +258,19 @@ hero:
 </ul>
 </div>
 <div class="feature-deep-card">
-<span class="card-badge">情境感记录</span>
-<div class="card-title">⏱️ 300字微复盘，告别小作文焦虑</div>
-<div class="card-desc">专注正计时与番茄倒计时结束时，趁热打铁拍一张桌面照片，配上一两句瞬间感悟。不用长篇大论，毫无负担记录真实温度。</div>
+<span class="card-badge">双轨记录哲学</span>
+<div class="card-title">⏱️ 专注计时与“理性+感性”双轨记录</div>
+<div class="card-desc">独创“事项内容（客观做了什么）+ 事项想法（主观心流体会）”双轨记录法。分别支持各 800 字独立撰写与最多 9 张配图，既有理性的成长轨迹，又有感性的生活温度。</div>
 <ul class="card-points">
-<li>单图记录与 300 字精炼文字上限</li>
-<li>支持随手补录与生活灵感快记</li>
-<li>打造只属于自己的高质量“私密朋友圈”</li>
+<li>支持专注正计时、番茄倒计时与即时快记</li>
+<li>【事项内容 + 事项想法】各支持 800 字独立记录</li>
+<li>支持最多 9 张高清配图，留住真实的专注瞬间</li>
 </ul>
 </div>
 <div class="feature-deep-card">
-<span class="card-badge">极客隐私创新</span>
-<div class="card-title">🤖 自带密钥 (BYOK) 的 AI 报告</div>
-<div class="card-desc">拒绝贩卖用户隐私。创新采用 Bring Your Own Key 模式，用户自由配置 DeepSeek / Kimi / GPT 等大模型凭证，一键提炼你的成长轨迹。</div>
-<ul class="card-points">
-<li>一键生成智能日报、周报、月报与年报</li>
-<li>敏感图片绝对脱敏，仅纯文本加密直连</li>
-<li>生成的报告永久本地留存，随时回顾复盘</li>
-</ul>
-</div>
-<div class="feature-deep-card">
-<span class="card-badge">反内耗哲学</span>
+<span class="card-badge">反内耗习惯哲学</span>
 <div class="card-title">🌱 允许请假，给习惯一份宽容</div>
-<div class="card-desc">市面上的习惯打卡断签一天就令人崩溃自责。我们创新性地引入“请假条”机制，疲惫时勇敢原谅自己，让坚持真正可持续。</div>
+<div class="card-desc">市面上的习惯打卡断签一天就令人崩溃自责。我们创新性地引入“请假条”机制，疲惫时勇敢原谅自己，仅限当日真实打卡，不搞虚假补卡。</div>
 <ul class="card-points">
 <li>直观的二元勾叉状态与打卡热力图</li>
 <li>真诚的请假条碎碎念，诚实面对真实当下</li>
@@ -255,7 +279,7 @@ hero:
 </div>
 <div class="feature-deep-card">
 <span class="card-badge">数据洞察与回望</span>
-<div class="card-title">📊 每日时间轴、饼图与热力图</div>
+<div class="card-title">📊 每日时间轴与多维统计透视</div>
 <div class="card-desc">自动串联你的每日专注轨迹，时间流向清晰可视化。一眼看清精力在学习、工作与运动中的真实投入占比，科学复盘每一天。</div>
 <ul class="card-points">
 <li>每日时间轴串联图文，记录真实生活轨迹</li>
@@ -264,7 +288,17 @@ hero:
 </ul>
 </div>
 <div class="feature-deep-card">
-<span class="card-badge">私有云与零成本</span>
+<span class="card-badge">极客隐私创新</span>
+<div class="card-title">🤖 自带密钥 (BYOK) 的 AI 报告</div>
+<div class="card-desc">拒绝贩卖用户隐私。创新采用 Bring Your Own Key 模式，用户自由配置 DeepSeek / Kimi / 豆包等大模型凭证，一键提炼你的成长轨迹。</div>
+<ul class="card-points">
+<li>一键生成智能日报、周报、月报与年报</li>
+<li>敏感图片绝对脱敏，仅纯文本加密直连</li>
+<li>生成的报告永久本地留存，随时回顾复盘</li>
+</ul>
+</div>
+<div class="feature-deep-card">
+<span class="card-badge">私有云与纯本地</span>
 <div class="card-title">☁️ 坚果云 WebDAV 云同步</div>
 <div class="card-desc">纯本地优先架构，数据 100% 掌握在自己手中。无需依赖中心化商业服务器，轻巧全量同步核心数据，差异增量上传新增照片。</div>
 <ul class="card-points">

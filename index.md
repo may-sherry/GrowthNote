@@ -20,6 +20,9 @@ hero:
       text: AI 配置教程 📖
       link: /tutorial/
     - theme: alt
+      text: 坚果云配置教程 ☁️
+      link: /webdav
+    - theme: alt
       text: 实战使用示例 ✨
       link: /examples
 ---

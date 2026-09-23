@@ -16,6 +16,11 @@ title: Kimi (月之暗面) 配置指南
 3. 点击 **新建 API Key** 按钮创建新的密钥。
 4. **复制生成的 API Key 密钥字符串**。
 
+::: warning ⚠️ 关键提醒：检查账户余额
+获取 API Key 后，请进入 Moonshot 控制台左侧的 **费用中心** 或 **财务概览**，确保**账户可用余额大于 0 元**（或拥有处于有效期的赠送体验金）。  
+若账户余额为 0.00 元且无可用额度，平台将直接拒绝响应，导致 App 内无法成功调用大模型生成 AI 报告。
+:::
+
 ---
 
 ## 📸 步骤图文参考
@@ -44,11 +49,6 @@ title: Kimi (月之暗面) 配置指南
 | **API Key (密钥)** | `sk-xxxxxxxxxxxxxxxx` | 刚才复制的 Moonshot 密钥 |
 | **接口地址 (Base URL)** | `https://api.moonshot.cn/v1` | 官方标准接口 (注意末尾带有 `/v1`) |
 | **模型名称 (Model Name)** | `kimi-k2.6` | 填入推荐的模型名称 |
-
-### 📱 手机 App 填报示范
-打开《成长小记》App，进入 AI 配置页面，按照如下示范填入对应参数：
-
-<img src="/kimi/app-config.png" alt="Kimi App 填报示范" style="border-radius: 8px; border: 1px solid var(--vp-c-divider); margin: 12px 0;" />
 
 ---
 

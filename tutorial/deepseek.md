@@ -16,6 +16,11 @@ title: DeepSeek (深度求索) 配置指南
 3. 点击 **创建 API key** 按钮，给 Key 命名（例如：`成长小记`），点击生成。
 4. **复制生成的密钥字符串**（注意：密钥只显示一次，请及时复制保存）。
 
+::: warning ⚠️ 关键提醒：检查账户余额
+获取 API Key 后，请在控制台左侧进入 **充值** 查看账户状态，确保**账户可用余额大于 0 元**。  
+若账户余额为 0.00 元且无赠送体验金，平台将直接拒绝响应（报 402/欠费错误），导致 App 内无法成功生成 AI 报告。
+:::
+
 ---
 
 ## 📸 步骤图文参考
@@ -39,11 +44,6 @@ title: DeepSeek (深度求索) 配置指南
 | **API Key (密钥)** | `sk-xxxxxxxxxxxxxxxx` | 刚才复制的 DeepSeek 密钥 |
 | **接口地址 (Base URL)** | `https://api.deepseek.com` | 官方标准接口地址 |
 | **模型名称 (Model Name)** | `deepseek-flash` | 推荐填入的模型名称 |
-
-### 📱 手机 App 填报示范
-打开《成长小记》App，进入 AI 配置页面，按照如下示范填入对应参数：
-
-<img src="/deepseek/app-config.png" alt="DeepSeek App 填报示范" style="border-radius: 8px; border: 1px solid var(--vp-c-divider); margin: 12px 0;" />
 
 ---
 

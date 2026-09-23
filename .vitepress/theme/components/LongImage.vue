@@ -5,7 +5,7 @@
       :class="{ expanded: isExpanded }" 
       @click="isExpanded = !isExpanded"
     >
-      <img :src="withBase(src)" :alt="alt" />
+      <img :src="withBase(src)" :alt="alt" class="no-zoom" />
       <div class="expand-overlay" v-if="!isExpanded">
         <span class="expand-text">👇 点击展开完整长图</span>
       </div>

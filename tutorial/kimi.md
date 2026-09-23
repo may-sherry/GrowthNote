@@ -20,11 +20,20 @@ title: Kimi (月之暗面) 配置指南
 
 ## 📸 步骤图文参考
 
-> 📸 **[截图占位符 1：Moonshot 控制台 API Key 管理页面]**  
-> *(在此处放置控制台 API Key 菜单截图)*
+### 步骤 1：进入开放平台并点击开始构造
+访问 Kimi (Moonshot) 开放平台首页，点击 **开始构造** 进入开发者控制台：
 
-> 📸 **[截图占位符 2：新建并复制 Key 弹窗截图]**  
-> *(在此处放置生成 Key 后的弹窗截图)*
+<img src="/kimi/step1.png" alt="Kimi 开放平台开始构造" style="border-radius: 8px; border: 1px solid var(--vp-c-divider); margin: 12px 0;" />
+
+### 步骤 2：进入 API Key 管理
+在控制台左侧菜单选择 **API Key 管理**，点击右上角的 **新建 API Key** 按钮：
+
+<img src="/kimi/step2.png" alt="Moonshot 控制台 API Key 管理页面" style="border-radius: 8px; border: 1px solid var(--vp-c-divider); margin: 12px 0;" />
+
+### 步骤 3：输入名称并生成 Key
+在弹窗中输入 API Key 名称（例如 `成长小记-ai报告`），点击 **确定** 即可生成并复制你的专属密钥：
+
+<img src="/kimi/step3.png" alt="新建并复制 API Key" style="border-radius: 8px; border: 1px solid var(--vp-c-divider); margin: 12px 0;" />
 
 ---
 
@@ -32,9 +41,14 @@ title: Kimi (月之暗面) 配置指南
 
 | 配置项 | 填报内容 | 说明 |
 | :--- | :--- | :--- |
-| **API Key** | `sk-xxxxxxxxxxxxxxxx` | 刚才复制的 Moonshot 密钥 |
+| **API Key (密钥)** | `sk-xxxxxxxxxxxxxxxx` | 刚才复制的 Moonshot 密钥 |
 | **接口地址 (Base URL)** | `https://api.moonshot.cn/v1` | 官方标准接口 (注意末尾带有 `/v1`) |
-| **模型名称 (Model)** | `moonshot-v1-8k` | 标准 8k 上下文模型 |
+| **模型名称 (Model Name)** | `kimi-k2.6` | 填入推荐的模型名称 |
+
+### 📱 手机 App 填报示范
+打开《成长小记》App，进入 AI 配置页面，按照如下示范填入对应参数：
+
+<img src="/kimi/app-config.png" alt="Kimi App 填报示范" style="border-radius: 8px; border: 1px solid var(--vp-c-divider); margin: 12px 0;" />
 
 ---
 

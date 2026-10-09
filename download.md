@@ -1,5 +1,11 @@
 # 📥 下载 GrowthNote (成长小记)
 
+<p style="display: flex; gap: 8px; margin-top: 12px; margin-bottom: 16px; flex-wrap: wrap;">
+  <img src="https://img.shields.io/github/v/release/may-sherry/GrowthNote?label=最新版本&color=2ea44f" alt="Version" />
+  <img src="https://img.shields.io/github/downloads/may-sherry/GrowthNote/total?label=总下载量&color=blue" alt="Downloads" />
+  <img src="https://img.shields.io/badge/平台-Android%208.0+-orange" alt="Platform" />
+</p>
+
 感谢你选择体验成长小记！由于我们目前处于初期版本，并未上架国内各大应用商店，请通过以下官方渠道下载。
 
 ::: warning ⚠️ 安装说明

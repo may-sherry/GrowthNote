@@ -33,19 +33,11 @@ const triggerToast = (text) => {
 const onOfficialDownload = () => {
   triggerToast('🚀 软件正在内部打磨与小范围测试中，公测版本即将上线，敬请期待！')
 }
-
-const onGooglePlayDownload = () => {
-  triggerToast('🌐 Google Play 版本正在筹备审核中，即将上架！✨')
-}
 </script>
 
 ## 官方下载通道
 
 <div class="download-btn-group">
-  <button class="download-btn google-play-btn" @click="onGooglePlayDownload" type="button">
-    <span>🛒</span>
-    <span>Google Play 商店</span>
-  </button>
   <button class="download-btn official-btn" @click="onOfficialDownload" type="button">
     <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
       <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
@@ -65,9 +57,37 @@ const onGooglePlayDownload = () => {
 
 <br>
 
-> **💡 通道说明**：
-> 1. **Google Play 商店**：国际官方应用商店认证通道，目前正在筹备审核中。
-> 2. **官网直链下载**：官方原生 APK 安装包直通渠道，目前处于内部测试阶段，公测版本即将开放。
+## 📦 应用商店上架排期
+
+成长小记目前正积极筹备各大官方应用商店的审核与上线：
+
+<div class="store-status-grid">
+  <div class="store-status-card">
+    <div class="store-info">
+      <span class="store-icon">📱</span>
+      <div>
+        <div class="store-name">国内主流应用商店</div>
+        <div class="store-sub">华为 / 小米 / vivo / OPPO / 荣耀 等厂商应用市场</div>
+      </div>
+    </div>
+    <span class="status-badge planning">📋 资质认证与上架规划排期中</span>
+  </div>
+
+  <div class="store-status-card">
+    <div class="store-info">
+      <span class="store-icon">🌐</span>
+      <div>
+        <div class="store-name">Google Play 商店</div>
+        <div class="store-sub">Google 国际版官方应用商店</div>
+      </div>
+    </div>
+    <span class="status-badge review">⏳ 国际版上架筹备与审核规划中</span>
+  </div>
+</div>
+
+::: tip 💡 提示
+在各应用商店完成上架审核前，请优先通过本页面的**【官网直链下载】**获取最新官方正式安装包。各大应用商店审核通过后，将第一时间在本页面开放对应的商店直达入口！
+:::
 
 <style scoped>
 .download-btn-group {
@@ -80,13 +100,13 @@ const onGooglePlayDownload = () => {
 .download-btn {
   border: none;
   cursor: pointer;
-  padding: 12px 24px;
-  border-radius: 8px;
+  padding: 14px 28px;
+  border-radius: 10px;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 16px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   transition: all 0.2s ease;
   user-select: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -102,14 +122,73 @@ const onGooglePlayDownload = () => {
   transform: translateY(0);
 }
 
-.google-play-btn {
-  background-color: #4285f4;
-  color: #ffffff;
-}
-
 .official-btn {
   background-color: #2ea44f;
   color: #ffffff;
+}
+
+/* 商店状态列表 */
+.store-status-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+.store-status-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  border-radius: 12px;
+  background-color: var(--vp-c-bg-soft, #f6f8fa);
+  border: 1px solid var(--vp-c-divider, rgba(60, 60, 67, 0.12));
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.store-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.store-icon {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.store-name {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--vp-c-text-1, #24292f);
+}
+
+.store-sub {
+  font-size: 13px;
+  color: var(--vp-c-text-2, #57606a);
+  margin-top: 2px;
+}
+
+.status-badge {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.status-badge.planning {
+  background-color: rgba(245, 158, 11, 0.12);
+  color: #d97706;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+.status-badge.review {
+  background-color: rgba(59, 130, 246, 0.12);
+  color: #2563eb;
+  border: 1px solid rgba(59, 130, 246, 0.25);
 }
 
 /* Toast 样式 */

@@ -61,8 +61,8 @@
 - 您在配置中填入的 API Key（如 DeepSeek、Kimi、OpenAI 等）仅留存在本地设备中。
 - 生成报告时，本应用仅将您的脱敏文字与时长数据**直接发往您所选择的大模型官方 API 接口**，绝不包含任何个人敏感身份信息，亦不经过任何第三方服务器抓取。
 
-### 3. 用户意见反馈（第三方表单）
-- 当您在“我的 - 留言反馈”中提交表单时，应用内将唤起安全的腾讯文档收集表。数据由腾讯文档平台依照其自身的隐私规范进行加密流转，供开发者查阅修复缺陷。
+### 3. 用户意见反馈
+- 本应用不内置任何第三方在线收集表单。若您在“我的 - 留言反馈”中选择通过电子邮箱或 QQ 社区向开发者反馈使用建议与缺陷，相关沟通信息仅供开发者查阅并协助解决产品问题，绝不会转交第三方或用于无关用途。
 
 ---
 
@@ -100,8 +100,8 @@
 
 如果您对本隐私政策、权限申请或个人信息安全有任何疑问、意见、投诉或建议，欢迎随时通过以下方式与独立开发者取得联系：
 
-- **电子邮箱**：[growthnote_support@163.com](mailto:growthnote_support@163.com)
-- **官网互动留言板**：[https://may-sherry.github.io/GrowthNote/comments](https://may-sherry.github.io/GrowthNote/comments)
+- **官方电子邮箱**：[growthnote_support@163.com](mailto:growthnote_support@163.com)
 - **GitHub 开源仓库 Issue**：[https://github.com/may-sherry/GrowthNote/issues](https://github.com/may-sherry/GrowthNote/issues)
+- **官方 QQ 交流群**：780054524
 
 我们将在收到您反馈后的 15 个工作日内予以核实与回复。

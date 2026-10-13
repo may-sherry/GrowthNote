@@ -44,7 +44,7 @@ export default defineConfig({
     ],
 
     footer: {
-      message: 'Released under the MIT License. · <a href="/GrowthNote/privacy" style="text-decoration: underline; opacity: 0.8;">隐私政策</a>',
+      message: 'Released under the MIT License. · <a href="/GrowthNote/terms" style="text-decoration: underline; opacity: 0.8;">用户协议</a> · <a href="/GrowthNote/privacy" style="text-decoration: underline; opacity: 0.8;">隐私政策</a>',
       copyright: 'Copyright © 2026-present GrowthNote'
     }
   }

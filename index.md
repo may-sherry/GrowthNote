@@ -79,23 +79,54 @@ hero:
 }
 @media (max-width: 960px) {
   .showcase-wrapper {
-    padding: 0 24px; /* 移动端保留内边距防贴边 */
+    padding: 0 20px;
   }
 }
+@media (max-width: 768px) {
+  .showcase-wrapper {
+    margin: 28px auto 40px !important;
+    padding: 0 16px !important; /* 缩小外边距，为卡片留出更宽广的展示空间 */
+  }
+}
+
 .showcase-header {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
+@media (max-width: 768px) {
+  .showcase-header {
+    margin-bottom: 20px !important;
+  }
+}
+
 .showcase-title {
   font-size: 1.8rem;
   font-weight: 800;
   letter-spacing: -0.02em;
+  line-height: 1.35 !important; /* 关键：确保任何屏幕下折行绝不重叠 */
   color: var(--vp-c-text-1);
 }
+@media (max-width: 768px) {
+  .showcase-title {
+    font-size: 1.35rem !important; /* 移动端调精致字号，防止强行断字 */
+    line-height: 1.4 !important;
+    letter-spacing: -0.01em !important;
+  }
+}
+
 .showcase-subtitle {
   font-size: 1.05rem;
   color: var(--vp-c-text-2);
+  line-height: 1.6 !important;
   margin-top: 8px;
+}
+@media (max-width: 768px) {
+  .showcase-subtitle {
+    font-size: 0.86rem !important;
+    line-height: 1.55 !important;
+    margin-top: 8px !important;
+    padding: 0 6px !important;
+  }
 }
 
 /* 两列大功能卡片网格 */
@@ -106,7 +137,8 @@ hero:
 }
 @media (max-width: 768px) {
   .showcase-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
+    gap: 16px !important; /* 移动端缩小卡片间隙 */
   }
 }
 
@@ -124,6 +156,12 @@ hero:
   border-color: var(--vp-c-brand-1);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.05);
 }
+@media (max-width: 768px) {
+  .feature-deep-card {
+    padding: 20px 16px !important; /* 关键：释放内边距，让文字横向舒展 */
+    border-radius: 14px !important;
+  }
+}
 
 .card-badge {
   display: inline-flex;
@@ -138,18 +176,43 @@ hero:
   width: fit-content;
   margin-bottom: 14px;
 }
+@media (max-width: 768px) {
+  .card-badge {
+    font-size: 0.78rem !important;
+    padding: 3px 10px !important;
+    margin-bottom: 10px !important;
+  }
+}
+
 .card-title {
   font-size: 1.3rem;
   font-weight: 700;
+  line-height: 1.35 !important;
   color: var(--vp-c-text-1);
   margin-bottom: 10px;
 }
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1.15rem !important;
+    line-height: 1.35 !important;
+    margin-bottom: 8px !important;
+  }
+}
+
 .card-desc {
   font-size: 0.95rem;
   color: var(--vp-c-text-2);
   line-height: 1.65;
   margin-bottom: 16px;
 }
+@media (max-width: 768px) {
+  .card-desc {
+    font-size: 0.88rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 12px !important;
+  }
+}
+
 .card-points {
   margin-top: auto;
   padding-top: 14px;
@@ -158,6 +221,11 @@ hero:
   padding-left: 0;
   margin-bottom: 0;
 }
+@media (max-width: 768px) {
+  .card-points {
+    padding-top: 10px !important;
+  }
+}
 .card-points li {
   font-size: 0.88rem;
   color: var(--vp-c-text-2);
@@ -165,6 +233,14 @@ hero:
   display: flex;
   align-items: center;
   gap: 8px;
+  line-height: 1.45;
+}
+@media (max-width: 768px) {
+  .card-points li {
+    font-size: 0.82rem !important;
+    margin-bottom: 5px !important;
+    line-height: 1.4 !important;
+  }
 }
 .card-points li::before {
   content: "✓";
@@ -184,6 +260,7 @@ hero:
 .cta-title {
   font-size: 1.4rem;
   font-weight: 800;
+  line-height: 1.35;
   color: var(--vp-c-text-1);
   margin-bottom: 8px;
 }
@@ -191,11 +268,12 @@ hero:
   font-size: 0.95rem;
   color: var(--vp-c-text-2);
   max-width: 580px;
+  line-height: 1.6;
   margin: 0 auto 20px;
 }
 .cta-btn-group {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 16px;
   flex-wrap: wrap;
 }
@@ -224,21 +302,84 @@ hero:
 .cta-btn-secondary:hover {
   border-color: var(--vp-c-brand-1);
 }
-
-/* 强制 Hero 按钮在桌面端排成一行 */
-.VPHomeHero .actions {
-  display: flex !important;
-  flex-wrap: nowrap !important;
-  gap: 12px !important;
-  justify-content: flex-start;
+@media (max-width: 768px) {
+  .cta-banner {
+    margin-top: 28px !important;
+    padding: 24px 16px !important;
+    border-radius: 16px !important;
+  }
+  .cta-title {
+    font-size: 1.15rem !important;
+    line-height: 1.35 !important;
+  }
+  .cta-desc {
+    font-size: 0.84rem !important;
+    line-height: 1.55 !important;
+    margin-bottom: 16px !important;
+  }
+  .cta-btn-group {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .cta-btn-primary, .cta-btn-secondary {
+    width: 100% !important;
+    text-align: center !important;
+    padding: 10px 16px !important;
+    box-sizing: border-box !important;
+  }
 }
-.VPHomeHero .action .VPButton {
-  padding: 0 18px !important; /* 缩小左右内边距让按钮更紧凑 */
-  white-space: nowrap !important; /* 防止文字换行 */
+
+/* Hero 区域按钮响应式重塑 */
+@media (min-width: 769px) {
+  /* 桌面端：排成一行 */
+  .VPHomeHero .actions {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 12px !important;
+    justify-content: flex-start !important;
+  }
+  .VPHomeHero .action .VPButton {
+    padding: 0 18px !important;
+    white-space: nowrap !important;
+  }
 }
 @media (max-width: 768px) {
+  /* 移动端：精致网格布局，告别单列大糖葫芦 */
+  .VPHomeHero {
+    padding-bottom: 24px !important;
+  }
   .VPHomeHero .actions {
-    flex-wrap: wrap !important; /* 移动端屏幕太小，允许换行 */
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px !important;
+    padding-top: 14px !important;
+    margin: 0 !important;
+  }
+  .VPHomeHero .action {
+    padding: 0 !important;
+  }
+  /* 主按钮（立即下载 APK）全宽通栏 */
+  .VPHomeHero .action:first-child {
+    grid-column: span 2 !important;
+  }
+  .VPHomeHero .action:first-child .VPButton {
+    width: 100% !important;
+    height: 44px !important;
+    line-height: 44px !important;
+    font-size: 0.98rem !important;
+    font-weight: 700 !important;
+  }
+  /* 第 4 个（实战使用示例）通栏全宽 */
+  .VPHomeHero .action:nth-child(4) {
+    grid-column: span 2 !important;
+  }
+  .VPHomeHero .action:not(:first-child) .VPButton {
+    width: 100% !important;
+    height: 38px !important;
+    line-height: 38px !important;
+    font-size: 0.84rem !important;
+    padding: 0 8px !important;
+    white-space: nowrap !important;
   }
 }
 

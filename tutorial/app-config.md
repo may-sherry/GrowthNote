@@ -15,7 +15,7 @@ title: App 内参数填报说明
 <img src="/app-config.png" alt="App 内 AI 参数配置页面" style="border-radius: 8px; border: 1px solid var(--vp-c-divider); max-width: 360px; margin: 16px 0;" />
 
 ::: warning 💡 关键前提：确认 API 账户余额不为零
-在点击【测试连接并保存】之前，请务必确认您在对应大模型开放平台的账户**可用余额大于 0 元**（或处于有效期的免费体验额度未用完）。  
+在点击【测试连接并保存】之前，请确认对应大模型开放平台的账户状态正常、具备可用的调用额度。
 如果 API Key 虽然有效但账户余额为 0，大模型平台会直接拒绝响应（报 402/欠费等错误），导致测试连接失败或无法调用模型生成 AI 报告。
 :::
 

@@ -388,7 +388,7 @@ hero:
 <div class="showcase-wrapper">
 <div class="showcase-header">
 <div class="showcase-title">✨ 为专注与长久坚持而生</div>
-<div class="showcase-subtitle">全功能永久免费、无广告干扰 · 摒弃沉重复杂的传统商业软件，用极简纯粹找回生活的掌控感</div>
+<div class="showcase-subtitle">无广告干扰、纯本地优先 · 用极简纯粹找回生活的掌控感</div>
 </div>
 <div class="showcase-grid">
 <div class="feature-deep-card">
@@ -454,7 +454,7 @@ hero:
 </div>
 <div class="cta-banner">
 <div class="cta-title">准备好开启你的成长小记了吗？</div>
-<div class="cta-desc">纯净本地、完全免费、没有任何烦人开屏广告。从今天的一刻专注开始，见证你每一次微小的进步。</div>
+<div class="cta-desc">纯净本地、没有烦人的开屏广告。从今天的一刻专注开始，见证你每一次微小的进步。</div>
 <div class="cta-btn-group">
 <a href="/GrowthNote/download" class="cta-btn-primary">立即下载体验 Android 版</a>
 <a href="https://pd.qq.com/s/g6yra9f2t?b=9" target="_blank" class="cta-btn-secondary">去 QQ 频道打个卡 💬</a>

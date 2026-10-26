@@ -456,7 +456,7 @@ hero:
 <div class="cta-title">准备好开启你的成长小记了吗？</div>
 <div class="cta-desc">纯净本地、没有烦人的开屏广告。从今天的一刻专注开始，见证你每一次微小的进步。</div>
 <div class="cta-btn-group">
-<a href="/GrowthNote/download" class="cta-btn-primary">立即下载体验 Android 版</a>
+<a href="/download" class="cta-btn-primary">立即下载体验 Android 版</a>
 <a href="https://pd.qq.com/s/g6yra9f2t?b=9" target="_blank" class="cta-btn-secondary">去 QQ 频道打个卡 💬</a>
 </div>
 </div>

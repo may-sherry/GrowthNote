@@ -5,7 +5,7 @@ export default defineConfig({
   description: "成长小记官方网站",
   
   // 关键：因为是挂载在 [用户名].github.io/GrowthNote/ 路径下，base 必须填写仓库名
-  base: '/GrowthNote/',
+  base: '/',
 
   themeConfig: {
     nav: [
@@ -44,7 +44,7 @@ export default defineConfig({
     ],
 
     footer: {
-      message: 'Released under the MIT License. · <a href="/GrowthNote/terms" style="text-decoration: underline; opacity: 0.8;">用户协议</a> · <a href="/GrowthNote/privacy" style="text-decoration: underline; opacity: 0.8;">隐私政策</a>',
+      message: 'Released under the MIT License. · <a href="/terms" style="text-decoration: underline; opacity: 0.8;">用户协议</a> · <a href="/privacy" style="text-decoration: underline; opacity: 0.8;">隐私政策</a>',
       copyright: 'Copyright © 2026-present GrowthNote'
     }
   }

@@ -1,10 +1,10 @@
 {
-  "msgId": 102,
+  "msgId": 100,
   "msgType": "update",
-  "versionCode": 3,
-  "versionName": "1.0.2",
-  "title": "🚀 成长小记 V1.0.2 现已发布",
-  "content": "信息通知测试2：验证多条更新卡片共存与堆叠（最新更新置顶）。",
+  "versionCode": 1,
+  "versionName": "1.0.0",
+  "title": "成长小记 1.0.0",
+  "content": "成长小记 1.0.0 已发布。",
   "url": "https://may-sherry.github.io/GrowthNote/",
-  "publishTime": "2026-10-11"
+  "publishTime": ""
 }
